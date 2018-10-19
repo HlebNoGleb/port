@@ -1,0 +1,191 @@
+body{
+	font-family: 'Open Sans', sans-serif!important;
+	font-weight: 400;
+	overflow-x: hidden;
+	
+
+}
+.container{
+	max-width: 1200px;
+	width: 100%;
+	margin: auto;
+	padding: 10px;
+}
+.top__menu{
+	margin: auto;
+	padding: 20px 0 50px 0;
+}
+.flex__row{
+	display: flex;
+	flex-wrap: wrap;
+}
+.flex__col{
+	display: flex;
+	flex-direction: column;
+}
+.align__items__center{
+	align-items: center;
+}
+.space__between{
+	justify-content: space-between;
+}
+.j_center{
+	justify-content: center;
+}
+.menu div{
+	margin: auto;
+	display: flex;
+}
+.menu__item{
+	padding: 10px;
+	
+	font-weight: 700;
+	font-size: 16px;
+}
+.menu__item:hover{
+	color: rgb(243,218,51);
+	transition:  0.3s;
+}
+.logo{
+	padding: 0 50px;
+}
+.logo img{
+	width: 80px;
+	height: 80px;
+}
+.my__photo img{
+	width: 300px;
+	height: 300px;
+	border-radius: 360px;
+}
+.my__photo h2{
+	font-weight: 700;
+	font-style: bold;
+	padding: 20px 0 0 0;
+	text-align: center;
+	font-size: 30px;
+	color: black;
+}
+.my__text{	
+	max-width: 70%;
+	line-height: 30px;
+	
+}
+.about__me{
+	position: relative;
+	background: url(../img/keyboard__bg.jpg) no-repeat center center;;
+	-webkit-background-size: cover;
+	background-size: cover;
+}
+
+/*.html img{
+	width: 100px;
+	height: 100px;
+	animation: rotatehtml 10s linear reverse infinite;
+}
+.html {
+  width: 100px;
+  height: 100px;
+  transform-origin: 250% 250%;
+  position: absolute;
+	left: 36%;
+    top: -20%;
+  animation: rotatehtml 25s linear infinite;
+}
+.css img{
+	width: 100px;
+	height: 100px;
+	animation: rotatecss 10s linear reverse infinite;
+}
+.css {
+width: 100px;
+    height: 100px;
+    transform-origin: 250% 250%;
+    position: absolute;
+    left: 36%;
+    top: -20%;
+    animation: rotatecss 25s linear infinite;
+}
+
+@keyframes rotatehtml {
+  100% {
+    transform: rotate(-360deg);
+  }
+}
+@keyframes rotatecss {
+  100% {
+    transform: rotate(720deg);
+  }
+}*/
+.c-hero-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 500px;}
+@media (max-width: 960px) {
+  .c-hero-flex {
+    flex-flow: column nowrap;
+  }
+  .c-hero-flex__item {
+    width: 100%;
+  }
+}
+.c-hero-flex__item {
+  flex-grow: 1;
+  background: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-size: cover;
+  box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.5);
+  transition: .2s all;
+  cursor: pointer;
+}
+@media (min-width: 961px) {
+  .c-hero-flex__item {
+    height: 100%;
+  }
+}
+.c-hero-flex__item:hover {
+  flex-grow: 2;
+  box-shadow: inset 0 0 0 100vmax rgba(175, 0, 100, 0.7);
+}
+.c-hero-flex__item:nth-child(1) {
+  background: #222 url(../img/portfolio/first_screen.png) no-repeat center center;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.c-hero-flex__item:nth-child(2) {
+ background: #222 url(../img/portfolio/car3.png) no-repeat center center;
+-webkit-background-size: cover;
+  background-size: cover;
+}
+.c-hero-flex__item:nth-child(3) {
+ background: #222 url(../img/portfolio/main.png) no-repeat center center;
+-webkit-background-size: cover;
+  background-size: cover;
+}
+.c-hero-flex__item:nth-child(4) {
+ background: #222 url(../img/portfolio/company_background.png) no-repeat center center;
+-webkit-background-size: cover;
+  background-size: cover;
+}
+.c-hero-flex__item:nth-child(5) {
+ background: #222 url(../img/portfolio/image_us.jpg) no-repeat center center;
+-webkit-background-size: cover;
+  background-size: cover;
+}
+.c-hero-flex__title {
+  text-transform: uppercase;
+  letter-spacing: .075em;
+  color: #fff;
+  transition: .2s all;
+}
+@media only screen and (max-width: 768px) {
+	.html{
+		display: none;
+	}
+	.css{
+		display: none;
+	}
+}
