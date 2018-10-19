@@ -110,7 +110,7 @@ body{
 	background-size: cover;
 }
 
-/*.html img{
+.html img{
 	width: 100px;
 	height: 100px;
 	animation: rotatehtml 10s linear reverse infinite;
@@ -148,7 +148,8 @@ width: 100px;
   100% {
     transform: rotate(720deg);
   }
-}*/
+}
+
 .c-hero-flex {
   display: flex;
   justify-content: center;
@@ -173,6 +174,7 @@ width: 100px;
   transition: .2s all;
   cursor: pointer;
 }
+
 @media (min-width: 1280px) {
   .c-hero-flex__item {
     height: 100%;
@@ -180,7 +182,7 @@ width: 100px;
 }
 .c-hero-flex__item:hover {
   flex-grow: 2;
-  box-shadow: inset 0 0 0 100vmax  rgba(150, 180, 228, 0.8)
+  box-shadow: inset 0 0 0 100vmax  rgb(252, 219, 0);
 }
 .c-hero-flex__item:nth-child(1) {
   background: #222 url(../img/portfolio/first_screen.png) no-repeat center center;
@@ -207,6 +209,7 @@ width: 100px;
 -webkit-background-size: cover;
   background-size: cover;
 }
+
 .c-hero-flex__title {
   text-transform: uppercase;
   letter-spacing: .075em;
@@ -215,6 +218,10 @@ width: 100px;
       width: 237px;
     text-align: center;
 }
+.c-hero-flex__title:hover {
+	color: rgb(100,100,100);
+}
+
 @media only screen and (max-width: 768px) {
 	.html{
 		display: none;
