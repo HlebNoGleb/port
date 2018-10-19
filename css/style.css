@@ -1,7 +1,7 @@
 body{
 	font-family: 'Open Sans', sans-serif!important;
 	font-weight: 400;
-	overflow-x: hidden;
+	overflow-x: hidden!important;
 	
 
 }
@@ -9,11 +9,9 @@ body{
 	max-width: 1200px;
 	width: 100%;
 	margin: auto;
-	padding: 10px;
 }
 .top__menu{
 	margin: auto;
-	padding: 20px 0 50px 0;
 }
 .flex__row{
 	display: flex;
@@ -36,22 +34,52 @@ body{
 	margin: auto;
 	display: flex;
 }
-.menu__item{
-	padding: 10px;
-	
+/*.menu__item{
+	position: relative;
+	padding: 70px;	
 	font-weight: 700;
 	font-size: 16px;
+	border: 5px solid rgba(255,255,255,0);
 }
 .menu__item:hover{
 	color: rgb(243,218,51);
+	background-color: red;
 	transition:  0.3s;
+	-webkit-transform: skew(-20deg);
+       -moz-transform: skew(-20deg);
+         -o-transform: skew(-20deg);
+}*/
+.link:hover {
+  transition: all .3s;
+  transform: skew(-20deg) rotate(0deg) translateY(0px);
+  background-color:rgb(252, 219, 0);
 }
+.link:not(hover) {
+  transition: all .3s;
+}
+.link {
+  transform: skew(-20deg) rotate(0deg) translateY(0px);
+  /*background-color: red;*/
+}
+
+
+.menu__item {
+	font-weight: 700;
+	font-size: 16px;
+    padding: 20px 40px;
+  transform: skew(20deg) rotate(0deg) translateY(0px);
+}
+
+
 .logo{
-	padding: 0 50px;
+	padding: 0px 50px;
 }
 .logo img{
-	width: 80px;
-	height: 80px;
+	width: 50px;
+	height: 50px;
+}
+.my__photo{
+	padding:50px 0 100px 0;
 }
 .my__photo img{
 	width: 300px;
@@ -122,7 +150,7 @@ width: 100px;
   justify-content: center;
   align-items: center;
   height: 500px;}
-@media (max-width: 960px) {
+@media (max-width: 1280px) {
   .c-hero-flex {
     flex-flow: column nowrap;
   }
@@ -141,14 +169,14 @@ width: 100px;
   transition: .2s all;
   cursor: pointer;
 }
-@media (min-width: 961px) {
+@media (min-width: 1280px) {
   .c-hero-flex__item {
     height: 100%;
   }
 }
 .c-hero-flex__item:hover {
   flex-grow: 2;
-  box-shadow: inset 0 0 0 100vmax  rgba(98, 133, 255,.8);
+  box-shadow: inset 0 0 0 100vmax  rgba(143, 164, 198,.8)
 }
 .c-hero-flex__item:nth-child(1) {
   background: #222 url(../img/portfolio/first_screen.png) no-repeat center center;
@@ -190,4 +218,22 @@ width: 100px;
 	.css{
 		display: none;
 	}
+	.link:hover {
+  transition: all .3s;
+  transform: skew(0deg) rotate(0deg) translateY(0px);
+  background-color:rgb(252, 219, 0);
+}
+.link:not(hover) {
+  transition: all .3s;
+}
+.link {
+  transform: skew(0deg) rotate(0deg) translateY(0px);
+  /*background-color: red;*/
+}
+.menu__item {
+	font-weight: 700;
+	font-size: 16px;
+    padding: 20px 40px;
+  transform: skew(0deg) rotate(0deg) translateY(0px);
+}
 }
