@@ -140,7 +140,6 @@ width: 100px;
   box-shadow: inset 0 0 0 100vmax rgba(0, 0, 0, 0.5);
   transition: .2s all;
   cursor: pointer;
-  width: 100%;
 }
 @media (min-width: 961px) {
   .c-hero-flex__item {
@@ -181,6 +180,8 @@ width: 100px;
   letter-spacing: .075em;
   color: #fff;
   transition: .2s all;
+      width: 237px;
+    text-align: center;
 }
 @media only screen and (max-width: 768px) {
 	.html{
