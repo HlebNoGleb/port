@@ -141,12 +141,12 @@ width: 100px;
 
 @keyframes rotatehtml {
   100% {
-    transform: rotate(-360deg);
+    transform: rotate(-5760deg);
   }
 }
 @keyframes rotatecss {
   100% {
-    transform: rotate(720deg);
+    transform: rotate(5760deg);
   }
 }
 
@@ -180,9 +180,12 @@ width: 100px;
     height: 100%;
   }
 }
-.c-hero-flex__item:hover {
+/*.c-hero-flex > */.c-hero-flex__item:hover {
   flex-grow: 2;
   box-shadow: inset 0 0 0 100vmax  rgb(252, 219, 0);
+}
+.c-hero-flex__item:hover .c-hero-flex__title {
+  color: rgb(100,100,100);
 }
 .c-hero-flex__item:nth-child(1) {
   background: #222 url(../img/portfolio/first_screen.png) no-repeat center center;
@@ -218,9 +221,183 @@ width: 100px;
       width: 237px;
     text-align: center;
 }
-.c-hero-flex__title:hover {
-	color: rgb(100,100,100);
+.site__popup{
+  height: 700px;
 }
+.mockup__block{
+	position: relative;
+  padding: 10px;
+}
+.iphoneMockup .device-wrapper {
+	position: absolute;
+	width: 7%!important;
+	z-index: 5;
+	transform: translate(50%,285%);
+}
+
+.ipadMockup .device-wrapper {
+	position: absolute;
+    width: 15%!important;
+    z-index: 4;
+    transform: translate(50%,157%);
+
+}
+
+.macbookMockup .device-wrapper {
+	position: absolute;
+ 	width: 40%!important;
+    z-index: 3;
+    transform: translate(140%,136%);
+}
+
+.surfaceMockup .device-wrapper {
+	position: absolute;
+    width: 60%!important;
+    z-index: 2;
+    transform: translate(25%,5%);
+}
+.elitehouse .iphoneMockup .screen{
+  background-image: url(../img/portfolio/mockups/elite_iphone.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.elitehouse .iphoneMockup .screen{
+  background-image: url(../img/portfolio/mockups/elite_iphone.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.elitehouse .ipadMockup .screen{
+  background-image: url(../img/portfolio/mockups/elite_ipad.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.elitehouse .macbookMockup .screen{
+  background-image: url(../img/portfolio/mockups/elite_pc.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.elitehouse .surfaceMockup .screen{
+  background-image: url(../img/portfolio/mockups/elite_pc.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.henes .iphoneMockup .screen{
+  background-image: url(../img/portfolio/mockups/henes_iphone.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.henes .ipadMockup .screen{
+  background-image: url(../img/portfolio/mockups/henes_ipad.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.henes .macbookMockup .screen{
+  background-image: url(../img/portfolio/mockups/henes_pc.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.henes .surfaceMockup .screen{
+  background-image: url(../img/portfolio/mockups/henes_pc.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.teacher .iphoneMockup .screen{
+  background-image: url(../img/portfolio/mockups/teacher_iphone.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.teacher .ipadMockup .screen{
+  background-image: url(../img/portfolio/mockups/teacher_ipad.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.teacher .macbookMockup .screen{
+  background-image: url(../img/portfolio/mockups/teacher_pc.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.teacher .surfaceMockup .screen{
+  background-image: url(../img/portfolio/mockups/teacher_pc.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.sba .iphoneMockup .screen{
+  background-image: url(../img/portfolio/mockups/sba_iphone.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover; 
+}
+.sba .ipadMockup .screen{
+  background-image: url(../img/portfolio/mockups/sba_ipad.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.sba .macbookMockup .screen{
+  background-image: url(../img/portfolio/mockups/sba_pc.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.sba .surfaceMockup .screen{
+  background-image: url(../img/portfolio/mockups/sba_pc.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.church .iphoneMockup .screen{
+  background-image: url(../img/portfolio/mockups/church_iphone.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.church .ipadMockup .screen{
+  background-image: url(../img/portfolio/mockups/church_ipad.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.church .macbookMockup .screen{
+  background-image: url(../img/portfolio/mockups/church_pc.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+.church .surfaceMockup .screen{
+  background-image: url(../img/portfolio/mockups/church_pc.png);
+  background-position: center 0; 
+  -webkit-background-size: cover;  
+  background-size: cover;
+}
+*{
+    -webkit-transition: all 0.4s cubic-bezier(1, 0.99, 0, 0.01);
+    -moz-transition: all 0.4s cubic-bezier(1, 0.99, 0, 0.01);
+    -o-transition: all 0.4s cubic-bezier(1, 0.99, 0, 0.01);
+    transition: all 0.4s cubic-bezier(1, 0.99, 0, 0.01);
+}
+
+
+
+
+
+
+
 
 @media only screen and (max-width: 768px) {
 	.html{
