@@ -2,7 +2,6 @@ body{
 	font-family: 'Open Sans', sans-serif!important;
 	font-weight: 400;
 	overflow-x: hidden!important;
-  background-color: #232323;
 	
 
 }
@@ -34,9 +33,6 @@ body{
 .menu div{
 	margin: auto;
 	display: flex;
-}
-.top__menu{
-   background-color: #232323;
 }
 /*.menu__item{
 	position: relative;
@@ -228,6 +224,7 @@ width: 100px;
 .site__popup{
   height: 700px;
 }
+<<<<<<< HEAD
 .gradient{
  background: linear-gradient(90deg, #1e1e1e,#1e1e1e ,#FCDB00 ,#1e1e1e,#1e1e1e );
   background-size: 400% 400%;
@@ -289,6 +286,8 @@ width: 100px;
     background-position: 0% 50%
   }
 }
+=======
+>>>>>>> parent of 65ed219... gradient black black yellow black black
 .mockup__block{
 	position: relative;
   padding: 10px;
@@ -320,12 +319,6 @@ width: 100px;
     width: 60%!important;
     z-index: 2;
     transform: translate(25%,5%);
-}
-.screen{
-  background-image: url(../img/portfolio/mockups/bg.png);
-  background-position: center 0; 
-  -webkit-background-size: cover;
-  background-size: cover;
 }
 .elitehouse .iphoneMockup .screen{
   background-image: url(../img/portfolio/mockups/elite_iphone.png);
@@ -456,11 +449,11 @@ width: 100px;
   -webkit-background-size: cover;  
   background-size: cover;
 }
-.screen{
-    -webkit-transition: all 1s cubic-bezier(1, 0.99, 0, 0.01);
-    -moz-transition: all 1s cubic-bezier(1, 0.99, 0, 0.01);
-    -o-transition: all 1s cubic-bezier(1, 0.99, 0, 0.01);
-    transition: all 1s cubic-bezier(1, 0.99, 0, 0.01);
+*{
+    -webkit-transition: all 0.4s cubic-bezier(1, 0.99, 0, 0.01);
+    -moz-transition: all 0.4s cubic-bezier(1, 0.99, 0, 0.01);
+    -o-transition: all 0.4s cubic-bezier(1, 0.99, 0, 0.01);
+    transition: all 0.4s cubic-bezier(1, 0.99, 0, 0.01);
 }
 
 
