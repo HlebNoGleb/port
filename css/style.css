@@ -271,6 +271,9 @@ width: 100px;
   0% {
     background-position: 0% 50%
   }
+  50% {
+    background-position: 50% 50%
+  }
   100% {
     background-position: 100% 50%
   }
@@ -278,6 +281,9 @@ width: 100px;
 @keyframes Gradientik {
   0% {
     background-position: 100% 50%
+  }
+  50% {
+    background-position: 50% 50%
   }
   100% {
     background-position: 0% 50%
