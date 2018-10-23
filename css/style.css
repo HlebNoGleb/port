@@ -1,10 +1,65 @@
+
 body{
 	font-family: 'Open Sans', sans-serif!important;
 	font-weight: 400;
 	overflow-x: hidden!important;
   background-color: #232323;
-	
+}
+::-webkit-scrollbar {
+    /*width: 20px;*/
+}
 
+/* Track */
+::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: rgb(254,212,72); 
+    border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: rgba(254,212,72,.7); 
+}
+.preloader{
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: #1e1e1e;
+  z-index: 999;
+  transition:1s all;
+  opacity: 1;
+  visibility: visible;
+}
+.loader{
+  width: 100px;
+  height: 100px;
+  border:10px solid white;
+  border-radius: 50%;
+  border-top-color: blue;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%,-50%);
+  animation: 1s spin infinite linear;
+}
+ .preloader.done{
+  opacity: 0;
+  visibility: hidden;
+}
+@keyframes spin{
+from {
+  transform: translate(-50%,-50%) rotate(0deg);
+}
+to{
+  transform: translate(-50%,-50%) rotate(360deg);
+}
 }
 .container{
 	max-width: 1200px;
@@ -231,55 +286,30 @@ width: 100px;
 .gradient{
  background: linear-gradient(90deg, #1e1e1e,#1e1e1e ,#FCDB00 ,#1e1e1e,#1e1e1e );
   background-size: 400% 400%;
-  -webkit-animation: Gradient 1s ease infinite;
-  -moz-animation: Gradient 1s ease infinite;
-  animation: Gradient 3s ease ;
+  animation: Gradient 2s cubic-bezier(0, 0, 0.2, 1); ;
 }
 .gradient1{
  background: linear-gradient(90deg, #1e1e1e,#1e1e1e ,#FCDB00 ,#1e1e1e,#1e1e1e );
   background-size: 400% 400%;
-  -webkit-animation: Gradient 1s ease infinite;
-  -moz-animation: Gradient 1s ease infinite;
-  animation: Gradientik 3s ease ;
+  animation: Gradientik 2s cubic-bezier(0, 0, 0.2, 1); ;
 }
-
-@-webkit-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
-@-moz-keyframes Gradient {
-  0% {
-    background-position: 0% 50%
-  }
-  50% {
-    background-position: 100% 50%
-  }
-  100% {
-    background-position: 0% 50%
-  }
-}
-
 @keyframes Gradient {
   0% {
+    max-height: 100%;
     background-position: 0% 50%
   }
   100% {
+    max-height: 100%;
     background-position: 100% 50%
   }
 }
 @keyframes Gradientik {
   0% {
+    max-height: 100%;
     background-position: 100% 50%
   }
   100% {
+    max-height: 100%;
     background-position: 0% 50%
   }
 }
@@ -287,11 +317,13 @@ width: 100px;
 	position: relative;
   padding: 10px;
 }
+
 .iphoneMockup .device-wrapper {
 	position: absolute;
 	width: 7%!important;
 	z-index: 5;
 	transform: translate(50%,285%);
+  overflow:hidden
 }
 
 .ipadMockup .device-wrapper {
@@ -450,12 +482,27 @@ width: 100px;
   -webkit-background-size: cover;  
   background-size: cover;
 }
+
 .screen{
-    -webkit-transition: all 1s cubic-bezier(1, 0.99, 0, 0.01);
-    -moz-transition: all 1s cubic-bezier(1, 0.99, 0, 0.01);
-    -o-transition: all 1s cubic-bezier(1, 0.99, 0, 0.01);
-    transition: all 1s cubic-bezier(1, 0.99, 0, 0.01);
+    transition: all 1s ease;
 }
+.church .surfaceMockup:hover .screen{
+  background-image: url(../img/portfolio/mockups/church_pc.gif); 
+  transition: all 1s ease;
+}
+.church .macbookMockup:hover .screen{
+  background-image: url(../img/portfolio/mockups/church_pc.gif); 
+  transition: all 1s ease;
+}
+.church .ipadMockup:hover .screen{
+  background-image: url(../img/portfolio/mockups/church_ipad.gif); 
+  transition: all 1s ease;
+}
+.church .iphoneMockup:hover .screen{
+  background-image: url(../img/portfolio/mockups/church_iphone.gif); 
+  transition: all 1s ease;
+}
+
 
 
 
