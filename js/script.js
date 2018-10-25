@@ -37,7 +37,10 @@ $('.c-hero-flex__item.church').click(function(){
 });
 
 
-
+$('#over').click(function(){
+	$('html').css({'overflow-y':'scroll'});
+	$('.start').fadeOut(500);
+});
 
 document.body.onload = function(){
 	setTimeout(function(){

@@ -20,7 +20,7 @@
   .device .screen {
     position: absolute;
     background-size: cover;
-    pointer-events: none; }
+   }
   .device .button {
     position: absolute;
     cursor: pointer; }
