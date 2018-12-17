@@ -14,9 +14,9 @@
 		
 	</head>
 	<body>
-		<div id="pade-preloader" class="preloader">
+		<!-- <div id="pade-preloader" class="preloader">
 			<div class="loader"></div>
-		</div>
+		</div> -->
 		
 				<header>
 					<section class="top__menu">
@@ -25,20 +25,7 @@
 								<div class="logo">
 									<!-- <img src="img/logo.png"> -->
 								</div>
-								<div class=" flex__row  ">
-									<div class="link">
-										<a href="" class="menu__item">Главная</a>
-									</div>
-									<div class="link">
-										<a href="" class="menu__item">Главная</a>
-									</div>
-									<div class="link">
-										<a href="" class="menu__item">Главная</a>
-									</div>
-									<div class="link">
-										<a href="" class="menu__item">Главная</a>
-									</div>
-								</div>
+								
 							</div>
 						</div>
 					</section>
@@ -47,18 +34,13 @@
 					<div class="container">
 						<div class="flex__row align__items__center j_center ">
 							<div class="my__photo">
-								<img src="img/me.png">
+								<img src="img/maket.jpg">
 							</div>
 						</div>
 					</div>
-					<div class="html">
-						<img src="img/HTML_Logo.png">
-					</div>
-					<div class="css">
-						<img src="img/CSS3_logo_and_wordmark.svg.png">
-					</div>
+					
 				</section>
-				<section class="c-hero-flex">
+				<!-- <section class="c-hero-flex">
 					<a class="c-hero-flex__item elitehouse">
 						<h2 class="c-hero-flex__title">Elite-House</h2>
 					</a>
@@ -74,114 +56,13 @@
 					<a class="c-hero-flex__item church">
 						<h2 class="c-hero-flex__title ">Church</h2>
 					</a>
-				</section>
-				<section class="site__popup">
-					<div class="container">
-						<div class="mockup__block">
-							<div class="iphoneMockup">
-								<div class="device-wrapper deviceRight">
-									<div class="device" data-device="iPhone7" data-orientation="portrait" data-color="black">
-										<div class="screen">
-										</div>
-										<div class="button">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="ipadMockup">
-								<div class="device-wrapper deviceRight">
-									<div class="device" data-device="iPadAir2" data-orientation="portrait" data-color="black">
-										<div class="screen">
-										</div>
-										<div class="button">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="macbookMockup">
-								<div class="device-wrapper deviceRight">
-									<div class="device" data-device="MacbookPro" data-orientation="portrait" data-color="black">
-										<div class="screen">
-										</div>
-										<div class="button">
-										</div>
-									</div>
-								</div>
-							</div>
-							<div class="surfaceMockup">
-								<div class="device-wrapper deviceRight">
-									<div class="device" data-device="iMac" data-orientation="portrait" data-color="black">
-										<div class="screen">
-										</div>
-										<div class="button">
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</section>
-				<!-- <section class="slides">
-					<div class="slide1">
-						<div class="device-wrapper deviceRight">
-							<div class="device" data-device="iPhoneSE" data-orientation="portrait" data-color="pink">
-								<div class="screen">
-									<div class="Phone_carusel" style="display: none;">
-										<div></div>
-										<div></div>
-										<div></div>
-										<div></div>
-										<div>
-											<ul class="card-list" >
-												<li class="card1">
-													<a class="card-image" style="background-image: url(img/me.png)" >
-													</a>
-													<a class="card-description"  target="_blank">
-														<h2>Gleb<br>Hleb</h2>
-														<p>Web-Developer</p>
-														<p>& just nice</p>
-														
-													</a>
-												</li>
-											</ul>
-										</div>
-									</div>
-								</div>
-								<div class="button activate-slick">
-									<i class="fas fa-hand-point-right"></i>
-								</div>
-							</div>
-						</div>
-					</div>
 				</section> -->
+				
 				
 				
 			</body>
 			<script type="text/javascript" src="js/jquery-3.3.1.min.js"></script>
 			<script src="js/script.js"></script>
 			<script src="slick/slick.js"></script>
-			<script type="text/javascript">
-				$('.carusel').slick({
-							arrows: true,
-							dots: false,
-							dotsClass: "my-dots",
-							nextArrow: '.slick-next',
-							prevArrow: '.slick-prev',
-							draggable: false,
-							swipe: false
-						});
-				$('.Phone_carusel').slick({
-							arrows: false,
-							dots: false,
-							// autoplay: true,
-							// autoplaySpeed: 2000,
-							
-						});
-				$(".activate-slick").one("click", function(){
-					$('.Phone_carusel').slideDown(500);
-					$('.Phone_carusel').slick("reinit");
-					$('.fa-hand-point-right').fadeOut(500);
-			
-			});
 			</script>
 		</html>

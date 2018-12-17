@@ -1,53 +1,33 @@
-function gradient() {
-	if ($('.site__popup').hasClass("gradient")) {
-				$('.site__popup').removeClass("gradient");
-				$('.site__popup').addClass("gradient1");
-	} else {
-				$('.site__popup').removeClass("gradient1");
-				$('.site__popup').addClass("gradient");
-	
-	}
-}
-$('.c-hero-flex__item.elitehouse').click(function(){
-	$('.site__popup').removeClass("henes teacher sba church");
-	$('.site__popup').addClass("elitehouse");
-	gradient();
-		
-});
-$('.c-hero-flex__item.henes').click(function(){
-	$('.site__popup').removeClass("elitehouse teacher sba church");
-	$('.site__popup').addClass("henes");
-	gradient();
-});
-$('.c-hero-flex__item.teacher').click(function(){
-	$('.site__popup').removeClass("henes elitehouse sba church");
-	$('.site__popup').addClass("teacher ");
-	gradient();
-
-});
-$('.c-hero-flex__item.sba').click(function(){
-	$('.site__popup').removeClass("henes teacher elitehouse church");
-	$('.site__popup').addClass("sba");
-	gradient();
-});
-$('.c-hero-flex__item.church').click(function(){
-	$('.site__popup').removeClass("henes teacher sba elitehouse");
-	$('.site__popup').addClass("church");
-	gradient();
-});
-
-
-$('#over').click(function(){
-	$('html').css({'overflow-y':'scroll'});
-	$('.start').fadeOut(500);
-});
-
 document.body.onload = function(){
+	function randomInteger(min, max) {
+	  var rand = min + Math.random() * (max - min)
+	  rand = Math.round(rand);
+	  return rand;
+	}
+/*
 	setTimeout(function(){
 		var preloader = document.getElementById('pade-preloader');
 		if(!preloader.classList.contains('done')){
 			preloader.classList.add('done');
 		}
 	}, 1000);
+*/	
+	setTimeout(function getRandomArbitrary() {
+	 	console.log(randomInteger(100,2000));
+	 	// .css("filter", "drop-shadow(0 0 "randomInteger(100,2000)" #edde12)");
+	 	$(".my__photo img").css('box-shadow', '10px 10px 10px red'); 
+	 	setInterval( getRandomArbitrary,randomInteger(1000,2000) 	);
+	}),randomInteger(1000,20000) ;
+	// setInterval( getRandomArbitrary, randomInteger(100,2000));
+	// setInterval( getRandomArbitrary,randomInteger(100,2000) 	);
+	// setTimeout(function run() {  func(i);  setTimeout(run, 100); }, 100);
 }
+
+
+
+
+
+
+
+
 
